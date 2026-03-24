@@ -3,139 +3,364 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Convivendo com o Autismo</title>
-
+    <title>
+      Convivendo com o Autismo - Guia Completo para Pais e Cuidadores
+    </title>
     <link rel="stylesheet" href="style.css" />
-
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self'; style-src 'self';"
+      content="default-src 'self'; img-src 'self' * data:; style-src 'self' 'unsafe-inline'; script-src 'self';"
     />
   </head>
-
   <body>
-    <!-- HERO -->
+    <!-- HEADER/NAVEGAÇÃO -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">🧠 Convivendo com o Autismo</div>
+        <nav class="nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#beneficios">Benefícios</a>
+          <a href="#oferta">Oferta</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
     <section class="hero">
-      <img src="imagens/imagem1.png" alt="Autismo" />
-      <div class="overlay">
-        <h1>
-          Descubra como entender, apoiar e transformar a vida de uma criança
-          autista
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Descubra Como Entender, Apoiar e Transformar a Vida de uma Criança
+          Autista
         </h1>
-        <p>
+        <p class="hero-subtitle">
           Não é sobre ter respostas prontas… é sobre aprender a enxergar com
           novos olhos.
         </p>
-        <a href="#" class="btn">Quero acessar o livro</a>
+        <a href="#oferta" class="btn btn-primary btn-large"
+          >Quero Acessar o Livro Agora</a
+        >
+        <p class="hero-trust">
+          ✓ Acesso imediato | ✓ Garantia de 7 dias | ✓ Conteúdo prático e
+          aplicável
+        </p>
+      </div>
+      <div class="hero-image">
+        <img
+          src="imagens/1.png"
+          alt="Criança autista em ambiente seguro"
+          loading="lazy"
+        />
       </div>
     </section>
 
-    <!-- IMPACTO -->
-    <section class="section">
-      <h2>Você não está preparado para isso…</h2>
+    <!-- PROBLEMA - SEÇÃO 1 -->
+    <section class="section section-problem">
+      <div class="container">
+        <h2>Você Não Está Preparado Para Isso…</h2>
+        <p class="section-subtitle">
+          E tudo bem. A maioria dos pais também não está.
+        </p>
 
-      <p class="impact">
-        “Funcionar não é o mesmo que estar bem.”<br /><br />
-        Muitas vezes, a criança está em silêncio… mas por dentro o mundo está
-        alto demais.
-      </p>
-
-      <p>
-        Luzes fortes, barulhos, mudanças simples… podem ser gatilhos para crises
-        que ninguém ao redor entende.
-      </p>
-    </section>
-
-    <!-- DOR REAL -->
-    <section class="section dark">
-      <h2>A verdade que ninguém fala</h2>
-
-      <p>
-        O maior esforço de uma pessoa autista não é aprender… é tentar parecer
-        “normal” em um mundo que não foi feito para ela.
-      </p>
-
-      <p class="impact">
-        Isso se chama <strong>masking</strong> — e gera ansiedade, esgotamento e
-        sofrimento silencioso.
-      </p>
-    </section>
-
-    <!-- CONEXÃO -->
-    <section class="section">
-      <h2>Talvez você esteja vivendo isso…</h2>
-
-      <p>
-        ❌ Não sabe como lidar com crises<br />
-        ❌ Se sente perdido após o diagnóstico<br />
-        ❌ Tem medo de estar errando<br />
-        ❌ Só quer ajudar… mas não sabe como
-      </p>
-
-      <img src="imagens/imagem2.png" />
-    </section>
-
-    <!-- VIRADA -->
-    <section class="section highlight">
-      <h2>Mas existe um caminho</h2>
-
-      <p class="impact">
-        Informação gera empatia.<br />
-        Empatia gera respeito.
-      </p>
-
-      <p>
-        O autismo não precisa de cura.<br />
-        Precisa de compreensão.
-      </p>
-    </section>
-
-    <!-- O LIVRO -->
-    <section class="section">
-      <h2>O que você vai encontrar neste guia</h2>
-
-      <div class="grid">
-        <div>✔ Entender o autismo na prática</div>
-        <div>✔ Reduzir crises</div>
-        <div>✔ Melhorar comunicação</div>
-        <div>✔ Criar rotina segura</div>
-        <div>✔ Apoiar sem pressão</div>
-        <div>✔ Construir conexão real</div>
+        <div class="problem-content">
+          <p class="impact-text">"Funcionar não é o mesmo que estar bem."</p>
+          <p class="section-text">
+            Muitas vezes, a criança está em silêncio… mas por dentro o mundo
+            está <strong>alto demais</strong>.
+          </p>
+          <p class="section-text">
+            Luzes fortes, barulhos, mudanças simples… podem ser gatilhos para
+            crises que ninguém ao redor entende.
+          </p>
+          <p class="section-text">
+            E você fica ali, tentando acalmar, tentando compreender, se culpando
+            por não saber o que fazer.
+          </p>
+        </div>
+        <img
+          src="imagens/2.png"
+          alt="Desafios do autismo"
+          loading="lazy"
+          class="section-image"
+        />
       </div>
-
-      <img src="imagens/imagem3.png" />
     </section>
 
-    <!-- FRASE FORTE -->
-    <section class="section dark">
-      <h2>Uma mudança de visão</h2>
+    <!-- VERDADE INCÔMODA - SEÇÃO 2 -->
+    <section class="section section-truth">
+      <div class="container">
+        <h2>A Verdade Que Ninguém Fala</h2>
+        <p class="impact-text">
+          O maior esforço de uma pessoa autista não é aprender…
+        </p>
+        <p class="impact-text" style="color: #ff6b6b">
+          É tentar parecer "normal" em um mundo que não foi feito para ela.
+        </p>
 
-      <p class="impact">
-        “O problema nunca foi o autismo.<br />
-        O problema é um mundo que não entende.”
-      </p>
+        <div class="truth-box">
+          <p class="truth-highlight">
+            Isso se chama <strong>masking</strong> — e gera ansiedade,
+            esgotamento e sofrimento silencioso.
+          </p>
+          <p class="section-text">
+            Muitas crianças autistas passam o dia inteiro se esforçando para se
+            encaixar. À noite, chegam em casa exaustas.
+          </p>
+          <p class="section-text">
+            E os pais não sabem por que a criança está tão irritada, tão
+            cansada, tão diferente.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- OFERTA -->
-    <section class="section oferta">
-      <h2>Comece agora</h2>
+    <!-- CONEXÃO EMOCIONAL - SEÇÃO 3 -->
+    <section class="section section-connection">
+      <div class="container">
+        <h2>Talvez Você Esteja Vivendo Isso Agora…</h2>
 
-      <p class="preco">De R$ 97 por apenas <strong>R$ 29,90</strong></p>
+        <div class="problems-list">
+          <div class="problem-item">
+            <span class="problem-icon">❌</span>
+            <p>Não sabe como lidar com crises e comportamentos desafiadores</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">❌</span>
+            <p>Se sente perdido e confuso após o diagnóstico</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">❌</span>
+            <p>Tem medo de estar errando na educação e no apoio</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">❌</span>
+            <p>Só quer ajudar… mas não sabe por onde começar</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">❌</span>
+            <p>Sente culpa e frustração quando as coisas não funcionam</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">❌</span>
+            <p>Está isolado e não encontra informações confiáveis</p>
+          </div>
+        </div>
 
-      <a href="#" class="btn grande">Comprar agora</a>
-
-      <p class="garantia">
-        ✔ Acesso imediato<br />
-        ✔ Leitura simples<br />
-        ✔ Garantia de 7 dias
-      </p>
+        <img
+          src="imagens/2.png"
+          alt="Apoio e compreensão"
+          loading="lazy"
+          class="section-image"
+        />
+      </div>
     </section>
 
-    <!-- FINAL -->
-    <section class="section final">
-      <h2>Você não precisa passar por isso sozinho</h2>
-      <a href="#" class="btn grande">Quero começar agora</a>
+    <!-- TRANSFORMAÇÃO - SEÇÃO 4 -->
+    <section class="section section-transformation">
+      <div class="container">
+        <h2>Mas Existe Um Caminho…</h2>
+
+        <div class="transformation-box">
+          <p class="impact-text">Informação gera empatia.</p>
+          <p class="impact-text">Empatia gera respeito.</p>
+          <p class="impact-text" style="color: #6c5ce7">
+            Respeito transforma vidas.
+          </p>
+        </div>
+
+        <div class="transformation-content">
+          <p class="section-text">
+            <strong>O autismo não precisa de cura.</strong>
+          </p>
+          <p class="section-text"><strong>Precisa de compreensão.</strong></p>
+          <p class="section-text">
+            E você está aqui porque quer oferecer exatamente isso.
+          </p>
+        </div>
+      </div>
     </section>
+
+    <!-- BENEFÍCIOS - SEÇÃO 5 -->
+    <section class="section section-benefits" id="beneficios">
+      <div class="container">
+        <h2>O Que Você Vai Encontrar Neste Guia</h2>
+        <p class="section-subtitle">
+          Conteúdo prático, baseado em evidências e aplicável no dia a dia.
+        </p>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">🧠</div>
+            <h3>Entender o Autismo na Prática</h3>
+            <p>
+              Descubra como o cérebro autista funciona e por que certos
+              comportamentos acontecem.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🛡️</div>
+            <h3>Reduzir Crises</h3>
+            <p>
+              Técnicas comprovadas para identificar gatilhos e prevenir
+              situações de sobrecarga.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💬</div>
+            <h3>Melhorar Comunicação</h3>
+            <p>
+              Estratégias eficazes para se comunicar melhor com sua criança
+              autista.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">📅</div>
+            <h3>Criar Rotina Segura</h3>
+            <p>
+              Como estruturar o dia para oferecer segurança e previsibilidade.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🤝</div>
+            <h3>Apoiar Sem Pressão</h3>
+            <p>
+              Aprenda a apoiar sua criança respeitando seus limites e
+              necessidades.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">❤️</div>
+            <h3>Construir Conexão Real</h3>
+            <p>
+              Desenvolva uma relação profunda e autêntica com sua criança
+              autista.
+            </p>
+          </div>
+        </div>
+
+        <img
+          src="imagens/3.png"
+          alt="Benefícios do guia"
+          loading="lazy"
+          class="section-image"
+        />
+      </div>
+    </section>
+
+    <!-- PROVA SOCIAL - SEÇÃO 6 -->
+    <section class="section section-social-proof">
+      <div class="container">
+        <h2>Pais Como Você Já Transformaram Suas Vidas</h2>
+
+        <div class="testimonials">
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "Finalmente entendi por que meu filho reagia daquele jeito. Tudo
+              faz sentido agora."
+            </p>
+            <p class="testimonial-author">
+              — Maria S., mãe de uma criança autista
+            </p>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "As técnicas deste guia reduziram as crises em 70%. Minha família
+              respira aliviada."
+            </p>
+            <p class="testimonial-author">
+              — João P., pai de dois filhos autistas
+            </p>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "Não me sentia sozinha. Saber que outras famílias passam pelo
+              mesmo foi libertador."
+            </p>
+            <p class="testimonial-author">— Ana C., mãe e educadora</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MUDANÇA DE PERSPECTIVA - SEÇÃO 7 -->
+    <section class="section section-perspective">
+      <div class="container">
+        <h2>Uma Mudança de Visão</h2>
+        <p class="impact-text">"O problema nunca foi o autismo.</p>
+        <p class="impact-text" style="color: #ff6b6b">
+          <strong>O problema é um mundo que não entende."</strong>
+        </p>
+        <p class="section-text">Este guia te ajuda a ser parte da solução.</p>
+      </div>
+    </section>
+
+    <!-- OFERTA - SEÇÃO 8 -->
+    <section class="section section-offer" id="oferta">
+      <div class="container">
+        <h2>Comece Sua Transformação Hoje</h2>
+
+        <div class="offer-box">
+          <p class="offer-price">
+            De <span class="original-price">R$ 97</span> por apenas
+          </p>
+          <p class="offer-final-price">R$ 29,90</p>
+          <p class="offer-discount">69% de desconto</p>
+
+          <a href="#" class="btn btn-primary btn-large btn-offer"
+            >Comprar Agora - R$ 29,90</a
+          >
+
+          <div class="offer-guarantee">
+            <p class="guarantee-title">✓ Garantia Completa de 7 Dias</p>
+            <p>
+              Se não gostar, devolvemos 100% do seu dinheiro. Sem perguntas.
+            </p>
+          </div>
+
+          <div class="offer-features">
+            <p>✓ Acesso imediato após a compra</p>
+            <p>✓ Conteúdo em PDF (baixável e portátil)</p>
+            <p>✓ Leitura simples e prática</p>
+            <p>✓ Dicas aplicáveis no dia a dia</p>
+            <p>✓ Suporte por email</p>
+          </div>
+        </div>
+
+        <p class="offer-urgency">
+          ⏰ Oferta válida por tempo limitado. Aproveite!
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA FINAL - SEÇÃO 9 -->
+    <section class="section section-final-cta">
+      <div class="container">
+        <h2>Você Não Precisa Passar Por Isso Sozinho</h2>
+        <p class="section-text">
+          Milhares de pais já descobriram como entender e apoiar melhor suas
+          crianças autistas.
+        </p>
+        <p class="section-text"><strong>Agora é a sua vez.</strong></p>
+
+        <a href="#oferta" class="btn btn-primary btn-large"
+          >Quero Começar Agora</a
+        >
+
+        <p class="final-message">
+          Seu filho merece ser compreendido. Você merece ter paz.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 Convivendo com o Autismo. Todos os direitos reservados.
+        </p>
+        <p>
+          Este material é educacional e não substitui orientação profissional.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
