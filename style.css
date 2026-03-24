@@ -1,62 +1,3 @@
-Iniciar teste gratuito
-
-Compartilhar
-Lite
-Obrigado pela atualização. Entendi que as imagens ainda não estão aparecendo, mesmo com as correções no HTML. Isso sugere que o problema pode estar no CSS ou em alguma outra configuração. Por favor, envie o seu arquivo CSS para que eu possa analisá-lo e identificar o que está impedindo a exibição das imagens.
-Após resolvermos a questão das imagens, focarei em deixar a sua landing page mais profissional, segura e chamativa, com novas cores e frases de impacto, conforme solicitado.
-Lite
-Obrigado por enviar o CSS! Agora tenho o código completo para analisar. Vou começar a trabalhar na nova versão da sua landing page, incorporando as melhorias visuais e de conteúdo que você solicitou. Em breve, você terá um HTML e CSS muito mais profissionais e persuasivos.
-Analisando seu CSS, identifiquei configurações que impedem a exibição correta das imagens. Com o código ajustado, planejarei uma versão mais profissional, atraente e persuasiva para a landing page.
-
-Convivendo com o Autismo - Landing Page
-Projeto inicializado
-Visualizar
-Analisando o CSS, identifiquei problemas nas configurações de imagem. Planejo criar uma estrutura visual mais profissional, com foco na estética e conversão da landing page.
-
-me ´passa o html e o css prontos ja
-Lite
-Claro! Vou preparar agora o HTML e CSS completos, profissionais e prontos para uso. Um momento, por favor.
-Lite
-Pronto! Aqui estão os dois arquivos completos e prontos para usar:
-📄 index.html - HTML profissional com:
-Header com navegação fixa
-Hero section impactante
-9 seções estratégicas focadas em conversão
-Frases de impacto que estimulam a compra
-Seção de benefícios com ícones
-Prova social (depoimentos)
-Oferta com desconto destacado
-CTA final persuasivo
-Footer profissional
-🎨 style_novo.css - CSS moderno com:
-Paleta de cores profissional (roxo, verde, vermelho)
-Gradientes e efeitos visuais sofisticados
-Design responsivo (funciona em celular, tablet e desktop)
-Animações suaves ao passar o mouse
-Variáveis CSS para fácil customização
-Tipografia clara e legível
-Sombras e espaçamento profissional
-Como usar:
-Renomeie o style_novo.css para style.css
-Coloque os arquivos na mesma pasta
-Crie uma pasta chamada imagens e coloque seus arquivos de imagem (1.png, 2.png, 3.png)
-Abra o index.html no navegador
-A página está totalmente funcional, profissional e otimizada para conversão!
-index.html
-Código · 11.78 KB
-style_novo.css
-Código · 14.73 KB
-Ver todos os arquivos nesta tarefa
-Criei um novo HTML e CSS profissionais para a landing page, com foco em estética, responsividade e conversão, incluindo seções estratégicas, depoimentos, oferta e CTA persuasivo.
-
-Tarefa concluída
-Como foi este resultado?
-Sugestões de acompanhamento
-
-
-
-
-style_novo.css
 /* ============================================
    RESET E VARIÁVEIS GLOBAIS
    ============================================ */
@@ -142,6 +83,7 @@ h6 {
 h2 {
   font-size: var(--font-size-3xl);
   color: var(--color-primary);
+  text-align: center;
 }
 
 h3 {
@@ -175,6 +117,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
 }
 
 .logo {
@@ -219,6 +163,7 @@ p {
   cursor: pointer;
   border: none;
   text-align: center;
+  margin: var(--spacing-md) auto;
 }
 
 .btn-primary {
@@ -240,9 +185,24 @@ p {
   transform: translateY(-1px);
 }
 
+.btn-secondary {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-3px);
+}
+
 .btn-large {
   padding: var(--spacing-lg) var(--spacing-2xl);
   font-size: var(--font-size-xl);
+  width: 100%;
+  max-width: 500px;
 }
 
 .btn-offer {
@@ -266,13 +226,25 @@ p {
   padding: var(--spacing-3xl) 0;
   background: linear-gradient(
     135deg,
-    rgba(108, 92, 231, 0.05) 0%,
-    rgba(0, 184, 148, 0.05) 100%
+    rgba(108, 92, 231, 0.1) 0%,
+    rgba(0, 184, 148, 0.1) 100%
   );
 }
 
 .hero-content {
   padding: var(--spacing-xl);
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: 20px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
 }
 
 .hero-title {
@@ -289,11 +261,27 @@ p {
   font-weight: 500;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.hero-buttons .btn {
+  margin: 0;
+}
+
 .hero-trust {
   margin-top: var(--spacing-xl);
   color: var(--color-secondary);
   font-weight: 600;
   font-size: var(--font-size-base);
+}
+
+.hero-image {
+  text-align: center;
 }
 
 .hero-image img {
@@ -311,11 +299,17 @@ p {
   padding: var(--spacing-3xl) 0;
 }
 
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
 .section-subtitle {
   font-size: var(--font-size-xl);
   color: var(--color-dark-light);
   margin-bottom: var(--spacing-2xl);
   font-weight: 500;
+  text-align: center;
 }
 
 .section-text {
@@ -323,13 +317,15 @@ p {
   color: var(--color-dark-light);
   line-height: 1.8;
   margin-bottom: var(--spacing-md);
+  text-align: center;
 }
 
 .section-image {
   width: 100%;
   max-width: 600px;
   height: auto;
-  margin-top: var(--spacing-2xl);
+  margin: var(--spacing-2xl) auto;
+  display: block;
   border-radius: 12px;
   box-shadow: var(--shadow-lg);
 }
@@ -346,8 +342,33 @@ p {
   );
 }
 
-.problem-content {
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
   margin: var(--spacing-2xl) 0;
+}
+
+.problem-box {
+  background: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--color-accent);
+  text-align: center;
+  position: relative;
+}
+
+.problem-number {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.problem-box p {
+  color: var(--color-dark-light);
+  font-size: var(--font-size-base);
 }
 
 /* ============================================
@@ -363,19 +384,66 @@ p {
   color: var(--color-white);
 }
 
-.truth-box {
-  background: rgba(255, 255, 255, 0.1);
+.truth-highlight-box {
+  background: rgba(255, 107, 107, 0.2);
   padding: var(--spacing-2xl);
   border-radius: 12px;
   border-left: 4px solid var(--color-accent);
   margin: var(--spacing-2xl) 0;
-  backdrop-filter: blur(10px);
+  text-align: center;
 }
 
-.truth-highlight {
+.truth-main {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.truth-accent {
+  color: var(--color-accent-light);
+}
+
+.truth-content {
+  text-align: center;
+  margin: var(--spacing-2xl) 0;
+}
+
+.truth-text {
   font-size: var(--font-size-xl);
   font-weight: 600;
+  margin-bottom: var(--spacing-xl);
+}
+
+.truth-effects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.effect-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.effect-icon {
+  font-size: var(--font-size-3xl);
+  display: block;
+  margin-bottom: var(--spacing-sm);
+}
+
+.effect-item p {
   color: var(--color-white);
+  font-weight: 600;
+}
+
+.truth-bottom {
+  font-size: var(--font-size-large);
+  text-align: center;
+  margin-top: var(--spacing-xl);
 }
 
 /* ============================================
@@ -388,7 +456,7 @@ p {
 
 .problems-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--spacing-lg);
   margin: var(--spacing-2xl) 0;
 }
@@ -402,6 +470,7 @@ p {
   gap: var(--spacing-md);
   align-items: flex-start;
   transition: var(--transition);
+  text-align: left;
 }
 
 .problem-item:hover {
@@ -417,6 +486,7 @@ p {
 .problem-item p {
   color: var(--color-dark-light);
   font-size: var(--font-size-base);
+  margin: 0;
 }
 
 /* ============================================
@@ -430,22 +500,54 @@ p {
     var(--color-secondary-dark) 100%
   );
   color: var(--color-white);
+  text-align: center;
 }
 
 .section-transformation h2 {
   color: var(--color-white);
 }
 
-.transformation-box {
-  background: rgba(255, 255, 255, 0.15);
-  padding: var(--spacing-2xl);
-  border-radius: 12px;
+.transformation-path {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-lg);
   margin: var(--spacing-2xl) 0;
-  backdrop-filter: blur(10px);
+  align-items: center;
 }
 
-.transformation-content {
+.path-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.path-number {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.path-text {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin: 0;
+}
+
+.path-arrow {
+  font-size: var(--font-size-2xl);
+  margin-top: var(--spacing-sm);
+  display: none;
+}
+
+.transformation-message {
   margin-top: var(--spacing-2xl);
+}
+
+.transformation-text {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
 }
 
 /* ============================================
@@ -487,6 +589,7 @@ p {
 .benefit-card h3 {
   color: var(--color-primary);
   margin-bottom: var(--spacing-md);
+  text-align: center;
 }
 
 .benefit-card p {
@@ -519,6 +622,13 @@ p {
   border-radius: 8px;
   box-shadow: var(--shadow-sm);
   border-left: 4px solid var(--color-secondary);
+  text-align: center;
+}
+
+.testimonial-stars {
+  color: #ffc107;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
 }
 
 .testimonial-text {
@@ -548,6 +658,22 @@ p {
   color: var(--color-white);
 }
 
+.perspective-main {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.perspective-accent {
+  color: var(--color-accent-light);
+}
+
+.perspective-bottom {
+  font-size: var(--font-size-xl);
+  margin-top: var(--spacing-xl);
+}
+
 /* ============================================
    SEÇÃO OFERTA
    ============================================ */
@@ -559,6 +685,7 @@ p {
     var(--color-primary-dark) 100%
   );
   color: var(--color-white);
+  text-align: center;
 }
 
 .section-offer h2 {
@@ -569,19 +696,35 @@ p {
   background: rgba(255, 255, 255, 0.15);
   padding: var(--spacing-2xl);
   border-radius: 12px;
-  margin: var(--spacing-2xl) 0;
+  margin: var(--spacing-2xl) auto;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.3);
+  max-width: 600px;
 }
 
-.offer-price {
-  font-size: var(--font-size-xl);
+.offer-badge {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-white);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: 20px;
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-sm);
+}
+
+.offer-label {
+  font-size: var(--font-size-base);
   margin-bottom: var(--spacing-sm);
+  opacity: 0.9;
 }
 
 .original-price {
+  font-size: var(--font-size-xl);
   text-decoration: line-through;
   opacity: 0.8;
+  margin-bottom: var(--spacing-lg);
+  display: block;
 }
 
 .offer-final-price {
@@ -607,14 +750,19 @@ p {
   margin: var(--spacing-xl) 0;
 }
 
+.guarantee-icon {
+  font-size: var(--font-size-2xl);
+  display: block;
+  margin-bottom: var(--spacing-sm);
+}
+
 .guarantee-title {
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
 }
 
 .offer-features {
-  text-align: left;
-  display: inline-block;
+  text-align: center;
   margin-top: var(--spacing-xl);
 }
 
@@ -641,6 +789,10 @@ p {
 }
 
 .section-final-cta h2 {
+  color: var(--color-white);
+}
+
+.section-final-cta .section-text {
   color: var(--color-white);
 }
 
@@ -681,31 +833,24 @@ p {
 }
 
 /* ============================================
-   RESPONSIVIDADE
+   RESPONSIVIDADE - TABLET
    ============================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   :root {
-    --font-size-4xl: 32px;
-    --font-size-3xl: 24px;
-    --spacing-3xl: 32px;
-    --spacing-2xl: 24px;
+    --font-size-4xl: 36px;
+    --font-size-3xl: 28px;
+    --spacing-3xl: 48px;
+    --spacing-2xl: 32px;
   }
 
-  .header .container {
-    flex-direction: column;
-    gap: var(--spacing-md);
-  }
-
-  .nav {
-    gap: var(--spacing-md);
-    flex-wrap: wrap;
-    justify-content: center;
+  .container {
+    padding: 0 var(--spacing-md);
   }
 
   .hero {
     grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-2xl);
     padding: var(--spacing-2xl) 0;
   }
 
@@ -717,13 +862,90 @@ p {
     font-size: var(--font-size-3xl);
   }
 
+  .benefits-grid,
+  .problems-list,
+  .testimonials,
+  .truth-effects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .transformation-path {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .path-arrow {
+    display: none;
+  }
+}
+
+/* ============================================
+   RESPONSIVIDADE - MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-4xl: 28px;
+    --font-size-3xl: 24px;
+    --font-size-2xl: 20px;
+    --font-size-xl: 18px;
+    --spacing-3xl: 32px;
+    --spacing-2xl: 24px;
+    --spacing-lg: 16px;
+  }
+
+  .header .container {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .logo {
+    font-size: var(--font-size-xl);
+  }
+
+  .nav {
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav a {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-2xl);
+  }
+
   .hero-subtitle {
     font-size: var(--font-size-base);
   }
 
+  .hero-buttons {
+    gap: var(--spacing-sm);
+  }
+
+  .btn-large {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-base);
+    max-width: 100%;
+  }
+
   .benefits-grid,
   .problems-list,
-  .testimonials {
+  .testimonials,
+  .truth-effects,
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transformation-path {
     grid-template-columns: 1fr;
   }
 
@@ -738,46 +960,19 @@ p {
   .offer-final-price {
     font-size: var(--font-size-3xl);
   }
-}
 
-@media (max-width: 480px) {
-  :root {
-    --font-size-4xl: 24px;
-    --font-size-3xl: 20px;
-    --font-size-2xl: 18px;
-    --spacing-3xl: 24px;
-    --spacing-2xl: 16px;
-    --spacing-lg: 16px;
+  .offer-box {
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) auto;
   }
 
-  .container {
-    padding: 0 var(--spacing-md);
-  }
-
-  .logo {
+  .truth-main {
     font-size: var(--font-size-xl);
-  }
-
-  .nav {
-    gap: var(--spacing-sm);
-    font-size: var(--font-size-sm);
-  }
-
-  .nav a {
-    padding: var(--spacing-xs) var(--spacing-sm);
-  }
-
-  .hero-title {
-    font-size: var(--font-size-2xl);
-  }
-
-  .btn-large {
-    padding: var(--spacing-md) var(--spacing-lg);
-    font-size: var(--font-size-base);
   }
 
   .benefit-card,
   .problem-item,
+  .problem-box,
   .testimonial {
     padding: var(--spacing-lg);
   }
@@ -786,7 +981,135 @@ p {
     font-size: var(--font-size-2xl);
   }
 
+  .section-text {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* ============================================
+   RESPONSIVIDADE - MOBILE PEQUENO
+   ============================================ */
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-4xl: 20px;
+    --font-size-3xl: 18px;
+    --font-size-2xl: 16px;
+    --font-size-xl: 14px;
+    --spacing-3xl: 20px;
+    --spacing-2xl: 16px;
+    --spacing-lg: 12px;
+    --spacing-md: 12px;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .header {
+    padding: var(--spacing-sm) 0;
+  }
+
+  .logo {
+    font-size: var(--font-size-base);
+  }
+
+  .nav {
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+
+  .nav a {
+    padding: var(--spacing-xs) var(--spacing-xs);
+    font-size: var(--font-size-sm);
+  }
+
+  .hero-badge {
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-sm);
+  }
+
+  .btn-large {
+    padding: var(--spacing-md) var(--spacing-md);
+    font-size: var(--font-size-sm);
+    max-width: 100%;
+  }
+
+  .btn {
+    margin: var(--spacing-sm) auto;
+  }
+
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  h2 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+  }
+
+  h3 {
+    font-size: var(--font-size-base);
+  }
+
   .impact-text {
     font-size: var(--font-size-base);
+  }
+
+  .benefit-card,
+  .problem-item,
+  .problem-box,
+  .testimonial,
+  .path-item {
+    padding: var(--spacing-md);
+  }
+
+  .benefit-icon {
+    font-size: 32px;
+  }
+
+  .problem-number,
+  .path-number {
+    font-size: var(--font-size-2xl);
+  }
+
+  .offer-box {
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) auto;
+  }
+
+  .offer-final-price {
+    font-size: var(--font-size-2xl);
+  }
+
+  .truth-main {
+    font-size: var(--font-size-base);
+  }
+
+  .section-subtitle {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .section-text {
+    font-size: var(--font-size-sm);
+  }
+
+  .problem-grid,
+  .benefits-grid,
+  .problems-list,
+  .testimonials,
+  .truth-effects,
+  .transformation-path {
+    gap: var(--spacing-md);
   }
 }
