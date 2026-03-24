@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="style.css" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self' * data:; style-src 'self' 'unsafe-inline'; script-src 'self';"
+      content="default-src 'self'; img-src * data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
     />
   </head>
   <body>
     <!-- HEADER/NAVEGAÇÃO -->
     <header class="header">
       <div class="container">
-        <div class="logo">🧠 Convivendo com o Autismo</div>
+        <div class="logo">🧩 Convivendo com o Autismo 🧩</div>
         <nav class="nav">
           <a href="#sobre">Sobre</a>
           <a href="#beneficios">Benefícios</a>
@@ -25,10 +25,22 @@
       </div>
     </header>
 
+    <!-- DECORAÇÃO SUPERIOR -->
+    <div class="ribbon-decoration top">
+      <span class="ribbon-item">🧩</span>
+      <span class="ribbon-item">🎗️</span>
+      <span class="ribbon-item">🧩</span>
+      <span class="ribbon-item">🎗️</span>
+      <span class="ribbon-item">🧩</span>
+      <span class="ribbon-item">🎗️</span>
+      <span class="ribbon-item">🧩</span>
+      <span class="ribbon-item">🎗️</span>
+    </div>
+
     <!-- HERO SECTION -->
     <section class="hero">
       <div class="hero-content">
-        <span class="hero-badge">📚 Guia Completo para Pais</span>
+        <span class="hero-badge">🧩 Guia Completo para Pais 🎗️</span>
         <h1 class="hero-title">
           Descubra Como Entender, Apoiar e Transformar a Vida de uma Criança
           Autista
@@ -48,12 +60,21 @@
         </p>
       </div>
       <div class="hero-image">
-        <img src="imagens/1.png" alt="Criança autista" loading="lazy" />
+        <img
+          src="./imagens/1.png"
+          alt="Criança autista em ambiente seguro"
+          loading="lazy"
+          onerror="
+            this.src =
+              'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%236c5ce7%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🧩 Imagem do Livro 🎗️%3C/text%3E%3C/svg%3E'
+          "
+        />
       </div>
     </section>
 
     <!-- PROBLEMA - SEÇÃO 1 -->
     <section class="section section-problem">
+      <div class="puzzle-bg"></div>
       <div class="container">
         <div class="section-header">
           <h2>❌ Você Não Está Preparado Para Isso…</h2>
@@ -88,10 +109,14 @@
         </div>
 
         <img
-          src="imagens/2.png"
+          src="./imagens/2.png"
           alt="Desafios"
           loading="lazy"
           class="section-image"
+          onerror="
+            this.src =
+              'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22%3E%3Crect fill=%22%236c5ce7%22 width=%22600%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🧩 Imagem do Livro 🎗️%3C/text%3E%3C/svg%3E'
+          "
         />
       </div>
     </section>
@@ -103,10 +128,10 @@
 
         <div class="truth-highlight-box">
           <p class="truth-main">
-            O maior esforço de uma pessoa autista não é aprender…
+            🧩 O maior esforço de uma pessoa autista não é aprender…
           </p>
           <p class="truth-main truth-accent">
-            É tentar parecer "NORMAL" em um mundo que não foi feito para ela.
+            É tentar parecer "NORMAL" em um mundo que não foi feito para ela. 🎗️
           </p>
         </div>
 
@@ -139,6 +164,7 @@
 
     <!-- CONEXÃO EMOCIONAL - SEÇÃO 3 -->
     <section class="section section-connection">
+      <div class="puzzle-bg puzzle-bg-2"></div>
       <div class="container">
         <h2>😔 Talvez Você Esteja Vivendo Isso Agora…</h2>
 
@@ -170,10 +196,14 @@
         </div>
 
         <img
-          src="imagens/2.png"
+          src="./imagens/2.png"
           alt="Apoio"
           loading="lazy"
           class="section-image"
+          onerror="
+            this.src =
+              'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22%3E%3Crect fill=%22%236c5ce7%22 width=%22600%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🧩 Imagem do Livro 🎗️%3C/text%3E%3C/svg%3E'
+          "
         />
       </div>
     </section>
@@ -186,31 +216,31 @@
         <div class="transformation-path">
           <div class="path-item">
             <div class="path-number">1</div>
-            <p class="path-text">Informação</p>
+            <p class="path-text">🧩 Informação</p>
             <div class="path-arrow">→</div>
           </div>
           <div class="path-item">
             <div class="path-number">2</div>
-            <p class="path-text">Empatia</p>
+            <p class="path-text">🎗️ Empatia</p>
             <div class="path-arrow">→</div>
           </div>
           <div class="path-item">
             <div class="path-number">3</div>
-            <p class="path-text">Respeito</p>
+            <p class="path-text">🧩 Respeito</p>
             <div class="path-arrow">→</div>
           </div>
           <div class="path-item">
             <div class="path-number">4</div>
-            <p class="path-text">Transformação</p>
+            <p class="path-text">🎗️ Transformação</p>
           </div>
         </div>
 
         <div class="transformation-message">
           <p class="transformation-text">
-            <strong>O autismo não precisa de cura.</strong>
+            <strong>🧩 O autismo não precisa de cura.</strong>
           </p>
           <p class="transformation-text">
-            <strong>Precisa de compreensão.</strong>
+            <strong>🎗️ Precisa de compreensão.</strong>
           </p>
           <p class="transformation-text">
             E você está aqui porque quer oferecer exatamente isso.
@@ -221,6 +251,7 @@
 
     <!-- BENEFÍCIOS - SEÇÃO 5 -->
     <section class="section section-benefits" id="beneficios">
+      <div class="puzzle-bg puzzle-bg-3"></div>
       <div class="container">
         <h2>🎯 O Que Você Vai Encontrar Neste Guia</h2>
         <p class="section-subtitle">
@@ -230,7 +261,7 @@
         <div class="benefits-grid">
           <div class="benefit-card">
             <div class="benefit-icon">🧠</div>
-            <h3>Entender o Autismo</h3>
+            <h3>🧩 Entender o Autismo</h3>
             <p>
               Como o cérebro autista funciona e por que certos comportamentos
               acontecem.
@@ -238,7 +269,7 @@
           </div>
           <div class="benefit-card">
             <div class="benefit-icon">🛡️</div>
-            <h3>Reduzir Crises</h3>
+            <h3>🎗️ Reduzir Crises</h3>
             <p>
               Técnicas comprovadas para identificar gatilhos e prevenir
               sobrecarga.
@@ -246,35 +277,39 @@
           </div>
           <div class="benefit-card">
             <div class="benefit-icon">💬</div>
-            <h3>Melhorar Comunicação</h3>
+            <h3>🧩 Melhorar Comunicação</h3>
             <p>
               Estratégias eficazes para se comunicar melhor com sua criança.
             </p>
           </div>
           <div class="benefit-card">
             <div class="benefit-icon">📅</div>
-            <h3>Criar Rotina Segura</h3>
+            <h3>🎗️ Criar Rotina Segura</h3>
             <p>
               Como estruturar o dia para oferecer segurança e previsibilidade.
             </p>
           </div>
           <div class="benefit-card">
             <div class="benefit-icon">🤝</div>
-            <h3>Apoiar Sem Pressão</h3>
+            <h3>🧩 Apoiar Sem Pressão</h3>
             <p>Aprenda a apoiar respeitando limites e necessidades.</p>
           </div>
           <div class="benefit-card">
             <div class="benefit-icon">❤️</div>
-            <h3>Construir Conexão Real</h3>
+            <h3>🎗️ Construir Conexão Real</h3>
             <p>Desenvolva uma relação profunda e autêntica com sua criança.</p>
           </div>
         </div>
 
         <img
-          src="imagens/3.png"
+          src="./imagens/3.png"
           alt="Benefícios"
           loading="lazy"
           class="section-image"
+          onerror="
+            this.src =
+              'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22%3E%3Crect fill=%22%236c5ce7%22 width=%22600%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🧩 Imagem do Livro 🎗️%3C/text%3E%3C/svg%3E'
+          "
         />
       </div>
     </section>
@@ -289,7 +324,7 @@
             <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
             <p class="testimonial-text">
               "Finalmente entendi por que meu filho reagia daquele jeito. Tudo
-              faz sentido agora."
+              faz sentido agora. 🧩"
             </p>
             <p class="testimonial-author">
               — Maria S., mãe de uma criança autista
@@ -299,7 +334,7 @@
             <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
             <p class="testimonial-text">
               "As técnicas deste guia reduziram as crises em 70%. Minha família
-              respira aliviada."
+              respira aliviada. 🎗️"
             </p>
             <p class="testimonial-author">
               — João P., pai de dois filhos autistas
@@ -309,7 +344,7 @@
             <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
             <p class="testimonial-text">
               "Não me sentia sozinha. Saber que outras famílias passam pelo
-              mesmo foi libertador."
+              mesmo foi libertador. 🧩"
             </p>
             <p class="testimonial-author">— Ana C., mãe e educadora</p>
           </div>
@@ -321,9 +356,9 @@
     <section class="section section-perspective">
       <div class="container">
         <h2>💡 Uma Mudança de Visão</h2>
-        <p class="perspective-main">"O problema nunca foi o autismo.</p>
+        <p class="perspective-main">🧩 "O problema nunca foi o autismo.</p>
         <p class="perspective-main perspective-accent">
-          <strong>O problema é um mundo que não entende."</strong>
+          <strong>🎗️ O problema é um mundo que não entende."</strong>
         </p>
         <p class="perspective-bottom">
           Este guia te ajuda a ser parte da solução.
@@ -333,11 +368,12 @@
 
     <!-- OFERTA - SEÇÃO 8 -->
     <section class="section section-offer" id="oferta">
+      <div class="puzzle-bg puzzle-bg-4"></div>
       <div class="container">
         <h2>🎁 Comece Sua Transformação Hoje</h2>
 
         <div class="offer-box">
-          <div class="offer-badge">OFERTA LIMITADA</div>
+          <div class="offer-badge">🧩 OFERTA LIMITADA 🎗️</div>
 
           <p class="offer-label">Investimento Original:</p>
           <p class="original-price">R$ 97,00</p>
@@ -353,7 +389,7 @@
 
           <div class="offer-guarantee">
             <p class="guarantee-icon">✓</p>
-            <p class="guarantee-title">Garantia Completa de 7 Dias</p>
+            <p class="guarantee-title">🧩 Garantia Completa de 7 Dias 🎗️</p>
             <p>
               Se não gostar, devolvemos 100% do seu dinheiro. Sem perguntas.
             </p>
@@ -382,7 +418,7 @@
           Milhares de pais já descobriram como entender e apoiar melhor suas
           crianças autistas.
         </p>
-        <p class="section-text"><strong>Agora é a sua vez.</strong></p>
+        <p class="section-text"><strong>Agora é a sua vez. 🧩 🎗️</strong></p>
 
         <a href="#oferta" class="btn btn-primary btn-large"
           >Quero Começar Agora</a
@@ -394,11 +430,24 @@
       </div>
     </section>
 
+    <!-- DECORAÇÃO INFERIOR -->
+    <div class="ribbon-decoration bottom">
+      <span class="ribbon-item">🎗️</span>
+      <span class="ribbon-item">🧩</span>
+      <span class="ribbon-item">🎗️</span>
+      <span class="ribbon-item">🧩</span>
+      <span class="ribbon-item">🎗️</span>
+      <span class="ribbon-item">🧩</span>
+      <span class="ribbon-item">🎗️</span>
+      <span class="ribbon-item">🧩</span>
+    </div>
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <p>
-          &copy; 2024 Convivendo com o Autismo. Todos os direitos reservados.
+          &copy; 2024 Convivendo com o Autismo. Todos os direitos reservados. 🧩
+          🎗️
         </p>
         <p>
           Este material é educacional e não substitui orientação profissional.
