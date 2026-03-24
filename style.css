@@ -67,6 +67,36 @@ body {
   color: var(--color-dark);
   background-color: var(--color-white);
   overflow-x: hidden;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(228, 76, 60, 0.03) 0,
+      rgba(228, 76, 60, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(52, 152, 219, 0.03) 0,
+      rgba(52, 152, 219, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(241, 196, 15, 0.03) 0,
+      rgba(241, 196, 15, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(243, 156, 18, 0.02) 0,
+      rgba(243, 156, 18, 0.02) 30px,
+      transparent 30px,
+      transparent 60px
+    );
+  background-attachment: fixed;
 }
 
 .container {
@@ -469,6 +499,36 @@ p {
 .section {
   padding: var(--spacing-3xl) 0;
   position: relative;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(228, 76, 60, 0.03) 0,
+      rgba(228, 76, 60, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(52, 152, 219, 0.03) 0,
+      rgba(52, 152, 219, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(241, 196, 15, 0.03) 0,
+      rgba(241, 196, 15, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(243, 156, 18, 0.02) 0,
+      rgba(243, 156, 18, 0.02) 30px,
+      transparent 30px,
+      transparent 60px
+    );
+  background-attachment: fixed;
 }
 
 .section-header {
@@ -508,11 +568,34 @@ p {
    ============================================ */
 
 .section-problem {
-  background: linear-gradient(
-    135deg,
-    rgba(108, 92, 231, 0.08) 0%,
-    rgba(255, 107, 107, 0.08) 100%
-  );
+  background:
+    linear-gradient(
+      135deg,
+      rgba(108, 92, 231, 0.08) 0%,
+      rgba(255, 107, 107, 0.08) 100%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(228, 76, 60, 0.03) 0,
+      rgba(228, 76, 60, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(52, 152, 219, 0.03) 0,
+      rgba(52, 152, 219, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(241, 196, 15, 0.03) 0,
+      rgba(241, 196, 15, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    );
+  background-attachment: fixed;
   border-top: 4px solid var(--puzzle-red);
   border-bottom: 4px solid var(--puzzle-yellow);
 }
@@ -642,7 +725,30 @@ p {
    ============================================ */
 
 .section-connection {
-  background: var(--color-light);
+  background:
+    var(--color-light),
+    repeating-linear-gradient(
+      45deg,
+      rgba(228, 76, 60, 0.03) 0,
+      rgba(228, 76, 60, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(52, 152, 219, 0.03) 0,
+      rgba(52, 152, 219, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(241, 196, 15, 0.03) 0,
+      rgba(241, 196, 15, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    );
+  background-attachment: fixed;
   border-top: 4px solid var(--puzzle-yellow);
   border-bottom: 4px solid var(--puzzle-red);
 }
@@ -753,7 +859,30 @@ p {
    ============================================ */
 
 .section-benefits {
-  background: var(--color-light);
+  background:
+    var(--color-light),
+    repeating-linear-gradient(
+      45deg,
+      rgba(228, 76, 60, 0.03) 0,
+      rgba(228, 76, 60, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(52, 152, 219, 0.03) 0,
+      rgba(52, 152, 219, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(241, 196, 15, 0.03) 0,
+      rgba(241, 196, 15, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    );
+  background-attachment: fixed;
   border-top: 4px solid var(--puzzle-red);
   border-bottom: 4px solid var(--puzzle-blue);
 }
@@ -804,11 +933,34 @@ p {
    ============================================ */
 
 .section-social-proof {
-  background: linear-gradient(
-    135deg,
-    rgba(108, 92, 231, 0.05) 0%,
-    rgba(0, 184, 148, 0.05) 100%
-  );
+  background:
+    linear-gradient(
+      135deg,
+      rgba(108, 92, 231, 0.05) 0%,
+      rgba(0, 184, 148, 0.05) 100%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(228, 76, 60, 0.03) 0,
+      rgba(228, 76, 60, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(52, 152, 219, 0.03) 0,
+      rgba(52, 152, 219, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(241, 196, 15, 0.03) 0,
+      rgba(241, 196, 15, 0.03) 30px,
+      transparent 30px,
+      transparent 60px
+    );
+  background-attachment: fixed;
   border-top: 4px solid var(--puzzle-yellow);
   border-bottom: 4px solid var(--puzzle-red);
 }
