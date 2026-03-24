@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f6f8;
 }
 
 .hero {
@@ -13,7 +12,7 @@ body {
   height: auto;
 }
 
-.hero-text {
+.overlay {
   position: absolute;
   top: 20%;
   left: 10%;
@@ -21,22 +20,31 @@ body {
   max-width: 500px;
 }
 
-.hero-text h1 {
-  font-size: 32px;
+.overlay h1 {
+  font-size: 34px;
 }
 
 .section {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
   background: white;
 }
 
+.dark {
+  background: #2c3e50;
+  color: white;
+}
+
 .highlight {
-  background: #f9f9f9;
+  background: #f4f6f8;
 }
 
 h2 {
   color: #27ae60;
+}
+
+.dark h2 {
+  color: #fff;
 }
 
 .btn {
@@ -47,7 +55,6 @@ h2 {
   border-radius: 5px;
   display: inline-block;
   margin-top: 20px;
-  font-weight: bold;
 }
 
 .btn:hover {
@@ -56,6 +63,11 @@ h2 {
 
 .grande {
   font-size: 20px;
+}
+
+.impact {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .grid {
@@ -75,11 +87,11 @@ img {
   background: #eafaf1;
 }
 
-.preco {
-  font-size: 22px;
+.final {
+  background: #000;
+  color: white;
 }
 
-.final {
-  background: #2c3e50;
-  color: white;
+.preco {
+  font-size: 22px;
 }
